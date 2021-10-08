@@ -1,5 +1,47 @@
 @import 'global';
+@import 'fonts';
+
+$color_1: #252B42;
+$color_2: #737373;
 
 body{
-    
+    font-family: 'Montserrat';
+}
+
+/***************************Header********************************************/
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    &__logo{
+        color: $color_1;
+        font-weight: 700;
+        line-height: 32px;
+        font-size: 24px;
+    }
+
+    &__container{
+        display: flex;
+        align-items: center;
+        min-height: 104px;
+    }
+
+}
+
+.menu{
+
+    &__list{
+        display: flex;
+    }
+
+    &__link{
+        color: $color_2;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+
 }
