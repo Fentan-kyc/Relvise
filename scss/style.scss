@@ -4,8 +4,12 @@
 $color_1: #252B42;
 $color_2: #737373;
 
-body{
+body,
+html{
     font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 24px;
+    color: $color_2;
 }
 
 /***************************Header********************************************/
@@ -27,21 +31,50 @@ body{
         display: flex;
         align-items: center;
         min-height: 104px;
+
+        @media (max-width:479px) {
+            min-height: 70px;
+        }
     }
 
+    &__menu{
+        padding: 5px 0;
+
+        margin: 0px 0px 0px 133px;
+
+        @media (max-width:992px) {
+            margin: 0px 0px 0px 80px;
+        }
+
+        @media (max-width:767px) {
+            margin: 0px 0px 0px 50px;
+        }
+
+        @media (max-width:479px) {
+            margin: 0px 0px 0px 30px;
+        }
+    }
 }
 
 .menu{
 
     &__list{
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 21px;
     }
 
     &__link{
         color: $color_2;
-        font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.2px;
+
+        @media (max-width:479px) {
+            font-size: 18px;
+        }
     }
 
 }
