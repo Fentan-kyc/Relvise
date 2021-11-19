@@ -27,6 +27,21 @@ html{
     }
 }
 
+.header-block{
+    text-align: center;
+    line-height: 20px;
+
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 57px;
+    }
+    &__sub-title{
+        display: inline-block;
+        max-width: 511px;
+    }
+}
+
 /***************************Header********************************************/
 .header{
     position: absolute;
@@ -93,6 +108,7 @@ html{
     }
 
 }
+
 
 /*******************************Main***************************************************/
 
@@ -183,6 +199,7 @@ html{
     position: relative;
     z-index: 99;
     margin-top: -111px;
+    margin-bottom: 80px;
 }
 
 .services__body{
@@ -251,3 +268,6 @@ html{
         }
     }
 }
+
+
+/***************************Advantages********************************************/

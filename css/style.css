@@ -123,6 +123,22 @@ html {
   border: 1px solid #0D5C63;
 }
 
+.header-block {
+  text-align: center;
+  line-height: 20px;
+}
+
+.header-block__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.header-block__sub-title {
+  display: inline-block;
+  max-width: 511px;
+}
+
 /***************************Header********************************************/
 .header {
   position: absolute;
@@ -308,6 +324,7 @@ html {
   position: relative;
   z-index: 99;
   margin-top: -111px;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 670px) {
@@ -387,3 +404,5 @@ html {
 .item-services_theme_dark-green .item-services__title {
   color: #fff;
 }
+
+/***************************Advantages********************************************/
