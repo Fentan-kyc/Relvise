@@ -35,6 +35,10 @@ html{
         font-size: 40px;
         font-weight: 700;
         line-height: 57px;
+
+        &:not(:last-child){
+        margin-bottom: 10px;
+        }
     }
     &__sub-title{
         display: inline-block;
@@ -42,6 +46,9 @@ html{
     }
 }
 
+.advantages__header{
+    margin-bottom: 50px;
+}
 /***************************Header********************************************/
 .header{
     position: absolute;
@@ -111,6 +118,10 @@ html{
 
 
 /*******************************Main***************************************************/
+
+.main{
+    background:#FAFAFA;;
+}
 
 .main-block{
     position: relative;
@@ -194,6 +205,7 @@ html{
 
 /****************************Services*************************************/
 
+
 .main__services
 {
     position: relative;
@@ -271,3 +283,66 @@ html{
 
 
 /***************************Advantages********************************************/
+
+.main__advantages{
+    margin-bottom: 125px;
+}
+
+.advantages{
+    margin-bottom: 80px;
+}
+
+.advantages__body{
+    display: flex;
+    margin: 0 -15px;
+}
+
+.advantages__column{
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+
+.advantages__item{
+    background-color: #fff;
+    font-weight: 700;
+    padding: 30px;
+    text-align: center;
+}
+
+.advantages__item > *:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.advantages__icon{
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.advantages__value{
+    color: $color_1;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: $color_1;
+}
